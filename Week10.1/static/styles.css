@@ -1,0 +1,18 @@
+/* Standard border style for all cells */
+table,
+td,
+th {
+    border-style: ridge;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.row th {
+    font-style: italic;
+}
+
+label {
+    padding: 10px;
+}

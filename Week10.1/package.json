@@ -1,0 +1,14 @@
+{
+  "name": "assingment",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "script.js",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.11.3",
+    "mysql": "^2.8.0"
+  }
+}
