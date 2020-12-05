@@ -42,7 +42,7 @@ function bindSubmitBtns() {
 
             req.open (
                 "GET", 
-                "http://localhost:10292/"
+                "http://flip2.engr.oregonstate.edu:10294/"
                 + "insert?" + 
                 "name=" + name + "&"+
                 "reps=" + reps + "&"+
@@ -88,7 +88,7 @@ function bindSubmitBtns() {
 
             req.open (
                 "GET", 
-                "http://localhost:10292/"
+                "http://flip2.engr.oregonstate.edu:10294/"
                 + "update?" + 
                 "id=" + id + "&" +
                 "name=" + name + "&"+
@@ -125,7 +125,7 @@ function deleteRow(rowId) {
     console.log("Pressed delete button on element...")
     req.open (
         "GET", 
-        "http://localhost:10292/"
+        "http://flip2.engr.oregonstate.edu:10294/"
         + "delete?" + "id=" + id,
         true
     )
@@ -161,32 +161,3 @@ function editRow(rowId, name, reps, weight, date, lbs) {
                 }
             })
 };
-    // event.preventDefault();
-    
-    // var req = new XMLHttpRequest();
-
-    // http://localhost:10292/update?id=2&name=benson&reps=0&weight=0&date=0&lbs=0
-    // console.log("Pressed delete button on element...")
-    
-    // safe-update?id=1&name=The+Task&done=false
-
-    // req.open(
-    //     "GET", 
-    //     "http://localhost:10292/" + "update?" + 
-    //     "id=" + rowId + "&" + 
-    //     "name=" + name + "&" + 
-    //     "reps=" + reps + "&" + 
-    //     "weight=" + weight + "&" + 
-    //     "date=" + date + "&" + 
-    //     "lbs=" + lbs, 
-    //     true
-    // )
-
-    // req.addEventListener("load", function() {
-    //     if (req.status >= 200 && req.status < 400) {
-    //         console.log("Edited correctly"); 
-    //     } else {
-    //         console.log("Error during edit GET request: " + req.statusText);
-    //     }
-    // });
-    // req.send(null);
