@@ -26,7 +26,7 @@ app.engine("handlebars", handlebars.engine);
 app.set("view engine", "handlebars");
 app.set("views", "./views");
 
-app.set("port", 10294);
+app.set("port", 10292);
 
 // Shows homepage with all workouts
 app.get("/", function (req, res, next) {
@@ -183,7 +183,7 @@ app.use(function (err, req, res, next) {
 
 app.listen(app.get("port"), function () {
     console.log(
-        "http://flip2.engr.oregonstate.edu:10294/" +
+        "http://flip2.engr.oregonstate.edu:10292/" +
             app.get("port") +
             "; press Ctrl-C to terminate."
     );
