@@ -24,7 +24,7 @@ app.use(jsonParser);
 
 app.engine("handlebars", handlebars.engine);
 app.set("view engine", "handlebars");
-app.set("views", "./static/views");
+app.set("views", "./views");
 
 app.set("port", 10296);
 
