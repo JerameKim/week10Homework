@@ -42,7 +42,7 @@ function bindSubmitBtns() {
 
             req.open (
                 "GET", 
-                "http://flip2.engr.oregonstate.edu:10295/"
+                "http://flip2.engr.oregonstate.edu:10296/"
                 + "insert?" + 
                 "name=" + name + "&"+
                 "reps=" + reps + "&"+
@@ -88,7 +88,7 @@ function bindSubmitBtns() {
 
             req.open (
                 "GET", 
-                "http://flip2.engr.oregonstate.edu:10295/"
+                "http://flip2.engr.oregonstate.edu:10296/"
                 + "update?" + 
                 "id=" + id + "&" +
                 "name=" + name + "&"+
@@ -125,7 +125,7 @@ function deleteRow(rowId) {
     console.log("Pressed delete button on element...")
     req.open (
         "GET", 
-        "http://flip2.engr.oregonstate.edu:10295/"
+        "http://flip2.engr.oregonstate.edu:10296/"
         + "delete?" + "id=" + id,
         true
     )
